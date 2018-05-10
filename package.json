@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bnjjj/node-request-digest"
+    "url": "https://github.com/javerd/node-request-digest"
   },
   "author": {
     "name": "Benjamin Coenen",
     "email": "benjamin.coenen@hotmail.com"
   },
   "bugs": {
-    "url": "https://github.com/bnjjj/node-request-digest/issues"
+    "url": "https://github.com/javerd/node-request-digest/issues"
   },
   "license": "ISC",
   "keywords": [
@@ -37,7 +37,7 @@
     "digestauth",
     "auth"
   ],
-  "homepage": "https://github.com/bnjjj/node-request-digest",
+  "homepage": "https://github.com/javerd/node-request-digest",
   "dependencies": {
     "bluebird": "^3.3.3",
     "lodash": "3.9.3",

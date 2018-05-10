@@ -153,6 +153,8 @@ var HTTPDigest = (function () {
         value: function _parseDigestResponse(digestHeader) {
             var prefix = 'Digest ';
             var challenge = digestHeader.substr(digestHeader.indexOf(prefix) + prefix.length);
+            // FIXME Arreglo tonto para salir del paso
+            challenge = challenge.replace('auth,auth-int', 'auth');
             var parts = challenge.split(',');
             var length = parts.length;
             var params = {};

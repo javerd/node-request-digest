@@ -120,6 +120,8 @@ class HTTPDigest {
     _parseDigestResponse(digestHeader) {
         let prefix = 'Digest ';
         let challenge = digestHeader.substr(digestHeader.indexOf(prefix) + prefix.length);
+        // FIXME Arreglo tonto para salir del paso
+        challenge = challenge.replace('auth,auth-int', 'auth');
         let parts = challenge.split(',');
         let length = parts.length;
         let params = {};
